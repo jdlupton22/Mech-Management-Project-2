@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Mech</title>
+    <style>
+
+
+            body {
+                background-image: url('F:/Revature_jd/extras/html/images/background.jpeg');
+                background-size: cover;
+                opacity: 0.95;
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .topnav {
+            overflow: hidden;
+            background-color: black;
+            }
+
+            .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            }
+
+            .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+            }
+
+            .topnav a.active {
+            background-color: #0704aa;
+            color: white;
+            }
+            .footer {
+            position: bottom;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+}
+.container {
+  padding: 16px;
+  background-color: black;
+  opacity: 0.9;
+  width: 35%;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=number] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=checkbox]:focus {
+  background-color: #ddd;
+  outline: gray;
+  width: 30%;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #068b2e;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+  color: #068b2e;
+
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+            </style>
+       
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="mechs.html">Browse</a>
+          </div>
+          
+                <style>
+                       body {
+                            background-image: url('images/background.jpeg');
+                            background-size: cover;
+                            opacity: 0.95;
+                        }
+                </style>
+            </nav>
+    <h2 style="text-align: center; color: aliceblue;">Register Mech</h2>
+    <div class="container">
+      <form action="/action_page.php">
+            <h3 style="text-align: center; color: aliceblue;">Upload New Mechs and Photos Below...</h3>
+                <label for="modelInput" style="color: aliceblue;"><b>Model:</b></label>
+                <input type="text" placeholder="Model" name="modelInput" required>
+                <br>
+                <label for="makeInput" style="color: aliceblue;"><b>Make:</b></label>
+                <input type="text" placeholder="Make" name="makeInput" required>
+                <br>
+                <label for="yearInput" style="color: aliceblue;"><b>Year:</b></label>
+                <input type="number" placeholder="Year" name="yearInput" required>
+                <br>
+                <label for="colorInput" style="color: aliceblue;"><b>Color:</b></label>
+                <input type="text" placeholder="Color" name="colorInput" required>
+                <br>
+                <label for="maxSpeedInput" style="color: aliceblue;"><b>Max Speed:</b></label>
+                <input type="number" placeholder="Max Speed - KM/H" name="maxSpeedInput" required>
+                <br>
+                <label for="weightInput" style="color: aliceblue;"><b>Weight:</b></label>
+                <input type="number" placeholder="Weight - Kilograms" name="weightInput" required>
+                <br>
+                <label for="heightInput" style="color: aliceblue;"><b>Height:</b></label>
+                <input type="number" placeholder="Height - Meters" name="heightInput" required>
+                <br>
+                <label for="pilotCountInput" style="color: aliceblue;"><b>Pilot Count:</b></label>
+                <input type="number" placeholder="Pilot Count" name="pilotCountInput" required>
+                <br>
+                <label for="descriptionInput" style="color: aliceblue;"><b>Description:</b></label>
+                <input type="text" placeholder="Description" name="descriptionInput" required>
+                <br>
+                <label for="availableCheck" style="color: aliceblue; align-items: center;"><b>Mech is Available</b></label>
+                <input type="checkbox" placeholder="Available" name="availableCheck" required>
+                <br>
+                <label for="confidentialCheck" style="color: aliceblue;"><b>Mech is Confidential</b></label>
+                <input type="checkbox" placeholder="Confidential" name="confidentialCheck" required>
+                <br>
+        <form action="/action_page.php">
+            <input type="file" id="myFile" name="filename" style="color: aliceblue; width: 50%;">
+          </form>
+        <div class="mb-5 text-end">
+            <button type="submit" class="registerbtn" onclick="registerMech()" style="color: aliceblue; background-color: blue; height: 40px; width: 100%;">Register Mech</button>
+        </div>
+    </main>
+    <div class="footer">
+        <p><span>&#169;</span> 2022 - Mech Management Project 2</p>
+      </div>
+</body>
+
+<!-- EXTERNAL SCRIPTS -->
+<script src="js/nav.js"></script>
+<script src="js/register_mech.js"></script>
+
+</html>

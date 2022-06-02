@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login Page</title>
+
+</head>
+<body>
+<div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="browse-mech.html">Browse</a>
+  </div>
+  
+  </div>
+        <style>
+               body {
+                    background-image: url('images/background.jpeg');
+                    background-size: cover;
+                    opacity: 0.95;
+                }
+        </style>
+    </nav>
+
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Add styles to the form container */
+.container {
+  position: center;
+  right: 0;
+  margin: 100px;
+  max-width:300px;
+  padding: 16px;
+  background-color: rgb(166, 164, 172);
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+  .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  }
+
+    .btn:hover {
+     opacity: 1;
+    }
+    .topnav {
+    overflow: hidden;
+    background-color: black;
+    }
+
+    .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+
+    .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    }
+
+    .topnav a.active {
+    background-color: #0704aa;
+    color: white;
+    }
+    .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height:40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<h2 style="text-align: center; color: aliceblue;">MECH MANAGEMENT ACCESS PORTAL</h2>
+<div class="bg-img">
+  <form action="F:\Revature_jd\extras\html\html\mechs.html" class="container">
+    <h1 style="text-align: center; color: red;">ENTER IF YOU DARE</h1>
+
+    <label for="usernameInput"><b>Username</b></label>
+    <input type="text" id="usernameInput" placeholder="Enter Username" name="username" required>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" id="passwordInput" placeholder="Enter Password" name="psw" required>
+
+    <div style="text-align:center">
+    <button type="submit" onclick="login()" style="background-color: orange; border-style: solid; border-color: red; text-align: center"
+    class="btn">ACTIVATE</button>
+  </form>
+</div>
+</div>
+<div class="footer">
+    <p><span>&#169;</span> 2022 - Mech Management Project 2</p>
+  </div>
+
+</body>
+<script src="js/nav.js"></script>
+<script src="js/login.js"></script> 
+</html>

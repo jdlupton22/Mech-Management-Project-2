@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Index Page</title>
+        
+        </head>
+        <body>
+        <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="browse-mech.html">Browse</a>
+            <a href="index.html">Logout</a>
+          </div>
+          
+          </div>
+                <style>
+                       body {
+                            background-image: url('F:/Revature_jd/extras/html/images/background.jpeg');
+                            background-size: cover;
+                            opacity: 0.95;
+                        }
+                </style>
+            </nav>
+        
+        <style>
+        body, html {
+          height: 100%;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        
+        /* Add styles to the form container */
+        .container {
+          position: center;
+          right: 0;
+          margin: 100px;
+          max-width:300px;
+          padding: 16px;
+          background-color: rgb(166, 164, 172);
+          opacity: 0.8;
+        }
+        
+        /* Full-width input fields */
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          border: none;
+          background: #f1f1f1;
+        }
+        
+        input[type=text]:focus, input[type=password]:focus {
+          background-color: #ddd;
+          outline: none;
+        }
+        
+        /* Set a style for the submit button */
+        .btn {
+          background-color: navy;
+          color: white;
+          padding: 15px 20px;
+          border: solid;
+          border-color: red;
+          cursor: pointer;
+          width: 100%;
+          opacity: 0.9;
+        }
+        
+        .btn:hover {
+          opacity: 1;
+        }
+        .topnav {
+            overflow: hidden;
+            background-color: black;
+            }
+        
+            .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            }
+        
+            .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+            }
+        
+            .topnav a.active {
+            background-color: #0704aa;
+            color: white;
+            }
+            .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height:40px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        
+        </style>
+        </head>
+<body onload="getMech(); setMech()">
+    
+    <main class="container">
+        <div class="my-3 d-none">
+            <label for="modelInput" class="form-label">Model</label>
+            <input type="text" class="form-control" id="modelInput">
+        </div>
+        <div class="mb-3 d-none">
+            <label for="makeInput" class="form-label">Make</label>
+            <input type="text" class="form-control" id="makeInput">
+        </div>
+        <div class="mb-3 d-none">
+            <label for="yearInput" class="form-label">Year</label>
+            <input type="number" class="form-control" id="yearInput">
+        </div>
+        <div class="mb-3">
+            <label for="colorInput" class="form-label">Color</label>
+            <input type="text" class="form-control" id="colorInput">
+        </div>
+        <div class="d-none">
+            <label for="maxSpeedInput" class="form-label">Max Speed</label>
+            <div class="input-group mb-3">
+                <input type="number" class="form-control" id="maxSpeedInput">
+                <span class="input-group-text">KM/h</span>
+            </div>
+        </div>
+        <div class="d-none">
+            <label for="weightInput" class="form-label">Weight</label>
+            <div class="input-group mb-3">
+                <input type="number" class="form-control" id="weightInput">
+                <span class="input-group-text">Kilograms</span>
+            </div>
+        </div>
+        <div class="d-none">
+            <label for="heightInput" class="form-label">Height</label>
+            <div class="input-group mb-3">
+                <input type="number" id="heightInput" class="form-control">
+                <span class="input-group-text">Meters</span>
+            </div>
+        </div>
+        <div class="mb-3 d-none">
+            <label for="pilotCountInput" class="form-label">Pilot Count</label>
+            <input type="number" id="pilotCountInput" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="descriptionInput" class="form-lagbel">Description</label>
+            <textarea id="descriptionInput" cols="30" rows="5" class="form-control"></textarea>
+        </div>
+        <div class="mb-3">
+            <input type="checkbox" id="availableCheck" class="form-check-input">
+            <label for="availableCheck" class="form-check-label" checked>Mech is Available</label>
+        </div>
+        <div class="mb-3">
+            <input type="checkbox" id="confidentialCheck" class="form-check-input">
+            <label for="confidentialCheck" class="form-check-label">Mech is Confidential</label>
+        </div>
+        <div class="mb-5 text-end">
+            <input type="file" id="pictureInput" name="filename">
+        </div>  
+        <div class="mb-5 text-end">
+            <button class="btn btn-success btn-lg" onclick="editMech()">Edit Mech</button>
+        </div>
+    </main>
+    
+    <div class="footer">
+        <p><span>&#169;</span> 2022 - Mech Management Project 2</p>
+      </div>
+</body>
+<!-- BOOTSTRAP SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>        
+
+<!-- EXTERNAL SCRIPTS -->
+<script src="js/nav.js"></script>
+<script src="js/edit_mech.js"></script>
+
+</html>
