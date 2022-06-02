@@ -1,4 +1,4 @@
-Mech-Management Project 
+## Mech-Management Project 
 
 The Mechanized Vehicle Management System allows for users to manage an inventory of Mechs.
 Users are able to login in to gain full access.  
@@ -8,11 +8,11 @@ If a user isn't logged in they are still able to view some mechs info, but Admin
     which prevents anonymous users from viewing it.
 Polit Users can also leave reviews on mechs.
 
-Technologies Used:
+## Technologies Used:
 REST, SQL, JavaScript, Java, Python, Flask, Javalin, Selenium, Postman, HTML, CSS, Cucumber, Trello, Unittesting, Pytest, Junit, and Built in loggers. 
 
 
-<!-- Before running Set up your Database-->
+## <!-- Before running Set up your Database-->
 <! -- Warning for security in Python DB is set as a env variable-->
 <! -- Warning for security in JAVAn DB has gitignore attached to resources for conenctions-->
 
