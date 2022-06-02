@@ -12,24 +12,25 @@ Polit Users can also leave reviews on mechs.
 REST, SQL, JavaScript, Java, Python, Flask, Javalin, Selenium, Postman, HTML, CSS, Cucumber, Trello, Unittesting, Pytest, Junit, and Built in loggers. 
 
 
-## <!-- Before running Set up your Database-->
+## Before running Set up your Database
 <! -- Warning for security in Python DB is set as a env variable-->
 <! -- Warning for security in JAVAn DB has gitignore attached to resources for conenctions-->
 
 
-<!-- To run the App in Python (recommended IDE PyCharm)Install:
+## To run the App in Python (recommended IDE PyCharm)Install:
   1. pip install psycopg2
   2. pip install flask
   3. pip install flask_cors
   4. pip install unittest
   5. pip install behave
   6. pip install selenium
- -->
+ 
 
-<!-- To run the App in Java Install:
+## To run the App in Java Install:
   1. Install Java IDE (recommended IDE Intellij)
   2. Run as a Maven Project
   Next install the following dependencies(may vary based on OS and Browser Utilized):
+  
       <dependencies>
 
         <dependency>
@@ -103,7 +104,7 @@ REST, SQL, JavaScript, Java, Python, Flask, Javalin, Selenium, Postman, HTML, CS
 
     </dependencies>
 
-ScreenShots of User Interface
+## ScreenShots of User Interface
 ![browser-not-logged-in](https://user-images.githubusercontent.com/102607791/171521253-c4b9cee4-bb0f-4dd8-9da0-e74541954807.png)
 ![checkout-form](https://user-images.githubusercontent.com/102607791/171521273-939891f4-3709-45d3-b589-d91289c2f82a.png)
 ![homepage-logged-in](https://user-images.githubusercontent.com/102607791/171521279-7bbec6df-c651-41d1-9a22-464b5e6577fb.png)
